@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607998"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        app:cardBackgroundColor="#F4F4F4"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewFoto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/textViewNIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewFoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="NIP: 123456789"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewJenisKelamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewNIP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Jenis Kelamin: Laki-laki"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewTempatTanggalLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewJenisKelamin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="TTL: Jakarta, 1 Januari 1990"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTempatTanggalLahir"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Alamat: Jalan Kenangan No. 123"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonGantiFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAlamat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Ganti Foto" />
+
+            <Button
+                android:id="@+id/buttonEditBiodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonGantiFoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Edit Biodata" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
